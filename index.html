@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> Zeynel Lezcano</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#erfahrungen"> Erfahrungen </a></li>
+                <li><a href="#projekte"> Projekte </a></li>
+                <li><a href="#kontakt"> Kontakt </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo"> Zeynel Lezcano</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#erfahrungen" onclick="toggleMenu()"> Erfahrungen </a></li>
+                <li><a href="#projekte" onclick="toggleMenu()"> Projekte </a></li>
+                <li><a href="#kontakt" onclick="toggleMenu()"> Kontakt </a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profil-pic.png" alt="Zeynel Lezcano profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hallo, ich bin</p>
+            <h1 class="title">Zeynel Lezcano</h1>
+            <p class="section__text__p2">Wirtschaftsinformatiker</p>
+
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Lebenslauf 
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#kontakt'">
+                    Kontakt
+                </button>
+            </div>
+
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" 
+                alt="Mein LinkedIn Profil" 
+                class="icon" 
+                onclick="location.href='linkedin.com/in/zeynel-zeran-lezcano-253162335'">
+                
+                <img src="./assets/github.png" 
+                alt="Mein GitHub Profil" 
+                class="icon" 
+                onclick="location.href='https://github.com/zeynel-lezcano'">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Erfahre mehr</p>
+        <h1 class="title">Über mich</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" 
+                alt="Profil Bild"
+                class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" 
+                        alt="Experience Icon"
+                        class="icon"
+                        />
+                        <h3>Erfahrungen</h3>
+                        <p>2+ Jahre <br /> Entwickler</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" 
+                        alt="Bildung Icon"
+                        class="icon"
+                        />
+                        <h3>Bildung</h3>
+                        <p>B.Sc. Wirtschaftsinformatik</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Hallo! Ich bin Zeynel Lezcano, ein vielseitiger Entwickler mit 
+                        über zwei Jahren Erfahrung in der Softwareentwicklung und fundierten 
+                        Kenntnissen im Online-Marketing. 
+                        <br> Durch mein Studium der Wirtschaftsinformatik 
+                        konnte ich nicht nur meine technischen Fähigkeiten in der Softwareentwicklung 
+                        und Datenanalyse vertiefen, sondern auch ein strategisches Verständnis für digitale 
+                        Geschäftsmodelle und Marketingstrategien entwickeln.
+                        <br>
+                        Während meines Studiums und meiner praktischen Tätigkeiten habe ich gelernt, 
+                        Daten-getriebene Entscheidungen zu treffen, digitale Kampagnen zu optimieren 
+                        und Unternehmen dabei zu unterstützen, ihre Online-Präsenz nachhaltig zu verbessern. 
+                        Die Kombination aus technischem Know-how und betriebswirtschaftlichem Denken ermöglicht es 
+                        mir, kreative Lösungen für komplexe Probleme zu finden – sei es in der Webentwicklung, 
+                        Business Intelligence oder digitalen Marketingstrategien.
+                        <br>
+                        Ich bin immer offen für neue Herausforderungen und freue mich darauf, innovative Ideen umzusetzen. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#erfahrungen'">
+    </section>
+
+    <section id="erfahrungen">
+        <p class="section__text__p1">Meine</p>
+        <h1 class="title">Erfahrungen</h1>
+        <div class="erfahrungen-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="erfahrungen-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Fortgeschritten</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Fortgeschritten</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Grundlagen</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="erfahrungen-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Java</h3>
+                                <p>Grundlagen</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Erlang</h3>
+                                <p>Grundlagen</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Grundlagen</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Erfahrungen Icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Fortgeschritten</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projekte'">
+    </section>
+
+    <section id="projekte">
+        <p class="section__text__p1">Meine letzten</p>
+        <h1 class="title">Projekte</h1>
+        <div class="erfahrungen-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-1.png" 
+                            alt="Projekt 1"
+                            class="projekt-img"
+                            />
+                    </div>
+                    <h2 class="erfahrungen-sub-title projekt-title">Projekt 1</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 projekt-btn" 
+                        onclick="location.href='https://github.com/zeynel-lezcano'"
+                        >
+                        GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-2.png" 
+                            alt="Projekt 1"
+                            class="projekt-img"
+                            />
+                    </div>
+                    <h2 class="erfahrungen-sub-title projekt-title">Projekt 2</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 projekt-btn" 
+                        onclick="location.href='https://github.com/zeynel-lezcano'"
+                        >
+                        GitHub
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img 
+                            src="./assets/project-3.png" 
+                            alt="Projekt 1"
+                            class="projekt-img"
+                            />
+                    </div>
+                    <h2 class="erfahrungen-sub-title projekt-title">Projekt 3</h2>
+                    <div class="btn-container">
+                        <button 
+                        class="btn btn-color-2 projekt-btn" 
+                        onclick="location.href='https://github.com/zeynel-lezcano'"
+                        >
+                        GitHub
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#kontakt'">
+    </section>
+
+    <section id="kontakt">
+        <p class="section__text__p1">Meine</p>
+        <h1 class="title">Kontaktdaten</h1>
+        <div class="kontakt-info-upper-container">
+            <div class="kontakt-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="Email Icon"
+                class="icon email-icon"
+                />
+                <p><a href="mailto:zeynel.lezcano@gmx.de">zeynel.lezcano@gmx.de</a></p>
+            </div>
+            <div class="kontakt-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="LinkedIn Icon"
+                class="icon linkedin-icon"
+                />
+                <p><a href="linkedin.com/in/zeynel-zeran-lezcano-253162335">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#erfahrungen"> Erfahrungen </a></li>
+                    <li><a href="#projekte"> Projekte </a></li>
+                    <li><a href="#kontakt"> Kontakt </a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Zeynel Lezcano. All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
